@@ -18,10 +18,12 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
-        "laravel/horizon": "^v5.7.1",
         "laravel/tinker": "^2.5",
+        "laravel/vapor-cli": "^1.24",
+        "laravel/vapor-core": "^2.12",
+        "laravel/vapor-ui": "^1.2",
         "spatie/laravel-mailcoach": "^4.0",
-        "spatie/mailcoach-ui": "^4.0"
+        "spatie/mailcoach-ui": "^4.3"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

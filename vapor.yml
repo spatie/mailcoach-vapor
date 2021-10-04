@@ -1,0 +1,31 @@
+id: 23830
+name: mailcoach-v4
+environments:
+    production:
+        memory: 1024
+        cli-memory: 512
+        runtime: docker
+        build:
+            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+    staging:
+        memory: 1024
+        cli-memory: 512
+        runtime: docker
+        database: mailcoach-v4
+        storage: mailcoach-v4
+        build:
+            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run dev && rm -rf node_modules'
+        deploy:
+          - 'php artisan migrate --force'
+        queue-timeout: 900
+        queues:
+          - default
+          - mailcoach
+          - mailcoach-feedback
+          - send-mail
+          - send-campaign
+          - send-automation-mail
