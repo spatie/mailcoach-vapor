@@ -70,7 +70,8 @@
             "@php artisan vendor:publish --tag mailcoach-migrations",
             "@php artisan vendor:publish --tag mailcoach-ui-migrations",
             "@php artisan mailcoach:prepare-git-ignore",
-            "@php artisan mailcoach:execute-composer-hook"
+            "@php artisan mailcoach:execute-composer-hook",
+            "@php artisan vapor-ui:install"
         ],
         "post-update-cmd": [
             "@php artisan mailcoach:execute-composer-hook"
