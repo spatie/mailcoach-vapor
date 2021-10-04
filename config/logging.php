@@ -77,6 +77,13 @@ return [
         ],
 
         'stderr' => [
+            'driver' => 'stack',
+            'channels' => ['monolog', 'flare'],
+            'ignore_exceptions' => false,
+        ],
+
+
+        'monolog' => [
             'driver' => 'monolog',
             'handler' => StreamHandler::class,
             'formatter' => env('LOG_STDERR_FORMATTER'),
