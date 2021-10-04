@@ -13,8 +13,8 @@ environments:
         memory: 1024
         cli-memory: 512
         runtime: docker
-        database: mailcoach-v4
-        storage: mailcoach-v4
+        database: mailcoach
+        storage: mailcoach
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
             - 'php artisan event:cache'
