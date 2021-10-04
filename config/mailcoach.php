@@ -209,6 +209,12 @@ return [
         'actions' => [
             'calculate_statistics' => \Spatie\Mailcoach\Domain\Shared\Actions\CalculateStatisticsAction::class,
         ],
+
+        /**
+         * Which rate limit driver to use, we use Redis by default.
+         * Options: redis | cache
+         */
+        'rate_limit_driver' => 'cache',
     ],
 
     /*
