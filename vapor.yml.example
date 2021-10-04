@@ -8,16 +8,6 @@ environments:
         database: mailcoach
         storage: mailcoach
         build:
-            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
-            - 'php artisan event:cache'
-            - 'npm ci && npm run prod && rm -rf node_modules'
-    staging:
-        memory: 1024
-        cli-memory: 512
-        runtime: docker
-        database: mailcoach
-        storage: mailcoach
-        build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
             - 'php artisan event:cache'
             - 'npm ci && npm run dev && rm -rf node_modules'

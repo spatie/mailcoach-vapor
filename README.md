@@ -18,6 +18,8 @@ Read our documentation on [how to get started](https://mailcoach.app/docs).
 
 - Copy `vapor.yml.example` to `vapor.yml` and fill in `id` and `name` with your project id and name on Vapor.
 
+- Create a database called `mailcoach` over at `vapor.laravel.com` (you can change the name in `vapor.yml`)
+
 - Create a user by:
   - executing `vapor command production`
   - enter this command `mailcoach:make-user --username=freek --email=<your-email> --password=<a-new-password>`
