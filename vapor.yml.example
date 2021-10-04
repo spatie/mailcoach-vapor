@@ -1,5 +1,5 @@
-id: 24744
-name: mailcoach-vapor-freek
+id:
+name:
 environments:
     production:
         memory: 1024

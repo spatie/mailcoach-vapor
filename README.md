@@ -14,6 +14,10 @@ In order to be able to install all necessary dependencies you need an mailcoach 
 
 Read our documentation on [how to get started](https://mailcoach.app/docs). 
 
+## Get started
+
+Copy `vapor.yml.example` to `vapor.yml` and fill in `id` and `name` with your project id and name on Vapor.
+
 ## Support us
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/mailcoach.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/Mailcoach)
