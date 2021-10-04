@@ -23,6 +23,7 @@ Read our documentation on [how to get started](https://mailcoach.app/docs).
 - Create a user by:
   - executing `vapor command production`
   - enter this command `mailcoach:make-user --username=freek --email=<your-email> --password=<a-new-password>`
+- before creating a list: define a mailer in the settings
 
 ## Support us
 
