@@ -37,8 +37,12 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'channels' => ['single', 'flare'],
             'ignore_exceptions' => false,
+        ],
+
+        'flare' => [
+            'driver' => 'flare',
         ],
 
         'single' => [
@@ -73,6 +77,13 @@ return [
         ],
 
         'stderr' => [
+            'driver' => 'stack',
+            'channels' => ['monolog', 'flare'],
+            'ignore_exceptions' => false,
+        ],
+
+
+        'monolog' => [
             'driver' => 'monolog',
             'handler' => StreamHandler::class,
             'formatter' => env('LOG_STDERR_FORMATTER'),

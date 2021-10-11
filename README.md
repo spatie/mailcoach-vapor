@@ -14,6 +14,17 @@ In order to be able to install all necessary dependencies you need an mailcoach 
 
 Read our documentation on [how to get started](https://spatie.be/docs/laravel-mailcoach). 
 
+## Get started
+
+- Copy `vapor.yml.example` to `vapor.yml` and fill in `id` and `name` with your project id and name on Vapor.
+
+- Create a database called `mailcoach` over at `vapor.laravel.com` (you can change the name in `vapor.yml`)
+
+- Create a user by:
+  - executing `vapor command production`
+  - enter this command `mailcoach:make-user --username=freek --email=<your-email> --password=<a-new-password>`
+- before creating a list: define a mailer in the settings
+
 ## Support us
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/mailcoach.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/Mailcoach)
