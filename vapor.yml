@@ -5,8 +5,9 @@ environments:
     memory: 1024
     cli-memory: 512
     runtime: docker
-    database: mailcoach-vapor-freek
-    storage: mailcoach-freek
+    database:
+    cache:
+    storage:
     build:
       - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
       - 'php artisan event:cache'
