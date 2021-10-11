@@ -37,7 +37,7 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single', 'flare'],
+            'channels' => ['single'],
             'ignore_exceptions' => false,
         ],
 
@@ -78,7 +78,7 @@ return [
 
         'stderr' => [
             'driver' => 'stack',
-            'channels' => ['monolog', 'flare'],
+            'channels' => ['monolog'],
             'ignore_exceptions' => false,
         ],
 
