@@ -1,4 +1,4 @@
-FROM laravelphp/vapor:php80
+FROM laravelphp/vapor:php81
 
 RUN apk --update add ffmpeg
 
