@@ -1,5 +1,5 @@
 id:
-name: 
+name:
 environments:
   production:
     memory: 1024
@@ -17,6 +17,7 @@ environments:
     queue-timeout: 900
     queues:
       - default
+      - mailcoach-schedule
       - mailcoach
       - mailcoach-feedback
       - send-mail

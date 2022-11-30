@@ -1,4 +1,5 @@
 /node_modules
+/public/build
 /public/hot
 /public/css
 /public/js
@@ -11,6 +12,7 @@
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
+auth.json
 npm-debug.log
 yarn-error.log
 .vapor
@@ -18,3 +20,7 @@ yarn-error.log
 composer.lock
 resources/views/vendor
 public/vendor/mailcoach
+public/vendor/mailcoach-markdown-editor
+public/vendor/horizon
+/.idea
+/.vscode
