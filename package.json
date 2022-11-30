@@ -6,6 +6,7 @@
     },
     "devDependencies": {
         "axios": "^0.27",
+        "lodash": "^4.17",
         "laravel-vite-plugin": "^0.6.0",
         "postcss": "^8.1.14",
         "vite": "^3.0.0"

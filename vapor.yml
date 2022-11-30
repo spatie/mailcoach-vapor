@@ -5,13 +5,12 @@ environments:
     memory: 1024
     cli-memory: 512
     runtime: docker
-    database:
-    cache:
-    storage:
+    database: # Add your database here
+    storage: # Add your storage here
     build:
       - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
       - 'php artisan event:cache'
-      - 'npm ci && npm run dev && rm -rf node_modules'
+      - 'npm ci && npm run build && rm -rf node_modules'
     deploy:
       - 'php artisan migrate --force'
     queue-timeout: 900
